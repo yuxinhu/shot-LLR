@@ -17,7 +17,9 @@ One nice thing of using BART is that it runs fast and easy to call (once it comp
 
 The other difference between these two versions is that in BART the regularization parameter is scaled based on the matrix size, which means different regularization parameters should be used between these two versions. I would recommend using BART or other reconstruction tools once everything is settled down.
 
-We also have one version in Python based on BART which also includes raw data reading and DICOM generation steps, please find it [here]().
+We also have one Python version based on BART which also includes raw data reading and DICOM generation steps, please find it [here](). 
+
+For other multi-shot DWI reconstruction algorithms, please find it [here]().
 
 ### Results
 One four-shot brain DWI data and corresponding sensitivity map are provieded (matrix size: 248-244, 8 coils). You should be able to get the following results (after some rotation and shift). 
