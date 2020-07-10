@@ -19,7 +19,14 @@ The other difference between these two versions is that in BART the regularizati
 
 
 ### Results
-One four-shot brain DWI data and corresponding sensitivity map are provieded (matrix size: 168-168, 48 coils). Here are the results I got (left: just Fourier transform without phase correction, middle: shot-LLR based on BART, right: shot-LLR using POCS). The difference between middle and right should mainly come from the regularization parameter difference (they both work well). Here no Partial Fourie reconstruction is used so the results look a little blurry, feel free to try [Homodyne](https://users.fmrib.ox.ac.uk/~karla/reading_group/lecture_notes/Recon_Pauly_read.pdf) or our [virtual conjugate shot method](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.27488).
+One four-shot brain DWI data and corresponding sensitivity map are provieded (matrix size: 168-168, 48 coils). Here are the results I got . 
+
+<div align="center">
+  <img = src="Results.jpg" width=“300px” />
+  <p>Example output (left: just Fourier transform without phase correction, middle: shot-LLR based on BART, right: shot-LLR using POCS).</p>
+</div>
+
+The difference between middle and right should mainly come from the regularization parameter difference (they both work well). Here no Partial Fourie reconstruction is used so the results look a little blurry, feel free to try [Homodyne](https://users.fmrib.ox.ac.uk/~karla/reading_group/lecture_notes/Recon_Pauly_read.pdf) or our [virtual conjugate shot method](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.27488).
 
 
 
