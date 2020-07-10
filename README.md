@@ -5,7 +5,7 @@ Multi-shot diffusion-weighted MRI reconstruction using locally low-rank regulari
 Shot-LLR is a reconstruction method for multi-shot diffusion-weighted MRI without explicit phase estimation. A convex model with a locally low-rank constraint on the spatial-shot matrices is proposed to resolve phase variations between different shots. For more detailed explanations, please refer to [our paper published on MRM](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.27488).
 
 ### Usage
-There are two folders, and each has an implementation based on different lanuages or tools:
+There are two folders, and each has an implementation of shot-LLR based on different lanuages or tools:
 
 (1) sllr_bart: based on [BART](https://mrirecon.github.io/bart/), which needs to be installed and added to path (!) before you run this script. 
 
