@@ -7,7 +7,7 @@ Shot-LLR is a reconstruction method for multi-shot diffusion-weighted MRI withou
 ### Usage
 There are three folders, and each has an implementation based on different lanuages or tools:
 
-(1）sllr_bart: based on [BART](https://mrirecon.github.io/bart/), which needs to be installed and added to path (!) before you run this script. 
+(1) sllr_bart: based on [BART](https://mrirecon.github.io/bart/), which needs to be installed and added to path (!) before you run this script. 
 
 (2) sllr_matlab: purely in Matlab.
 
