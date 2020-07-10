@@ -19,7 +19,7 @@ The other difference between these two versions is that in BART the regularizati
 
 
 ### Results
-One four-shot brain DWI data and corresponding sensitivity map are provieded (matrix size: 168-168, 48 coils). Here are the results I got . 
+One four-shot brain DWI data and corresponding sensitivity map are provieded (matrix size: 168-168, 48 coils). You should be able get the following results (after some rotation and shift). 
 
 <div align="center">
   <img = src="Results.png" width=“300px” />
