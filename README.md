@@ -6,32 +6,18 @@ Shot-LLR is a reconstruction method for multi-shot diffusion-weighted MRI withou
 
 ### Usage
 There are three folders, and each has an implementation based on different lanuages or tools:
-1）sllr_bart: based on [BART](https://mrirecon.github.io/bart/), which needs to be installed and added to path (!) before you run this script. 
-2) sllr_matlab: purely in Matlab.
 
-The implementaion of shot-LLR in Matlab is based on [Dr. Tao Zhang's work](http://mrsrl.stanford.edu/~tao/software.html), and the problem is solved using [POCS algorithm](https://en.wikipedia.org/wiki/Projections_onto_convex_sets). One nice thing of using BART is that it runs fast and easy to call (once it compiles for you and you know how it works). In BART, this reconstruction problem is solved using [FISTA](https://people.rennes.inria.fr/Cedric.Herzet/Cedric.Herzet/Sparse_Seminar/Entrees/2012/11/12_A_Fast_Iterative_Shrinkage-Thresholding_Algorithmfor_Linear_Inverse_Problems_(A._Beck,_M._Teboulle)_files/Breck_2009.pdf) by default. The other difference between these two versions is that in BART the regularization parameter is scaled based on the matrix size, which means different regularization parameters should be used between these two versions. I would recommend using BART or other reconstruction tools once everything is settled down.
+(1）sllr_bart: based on [BART](https://mrirecon.github.io/bart/), which needs to be installed and added to path (!) before you run this script. 
+
+(2) sllr_matlab: purely in Matlab.
+
+The implementaion of shot-LLR in Matlab is based on [Dr. Tao Zhang's work](http://mrsrl.stanford.edu/~tao/software.html), and the problem is solved using [POCS algorithm](https://en.wikipedia.org/wiki/Projections_onto_convex_sets). 
+
+One nice thing of using BART is that it runs fast and easy to call (once it compiles for you and you know how it works). In BART, this reconstruction problem is solved using [FISTA](https://people.rennes.inria.fr/Cedric.Herzet/Cedric.Herzet/Sparse_Seminar/Entrees/2012/11/12_A_Fast_Iterative_Shrinkage-Thresholding_Algorithmfor_Linear_Inverse_Problems_(A._Beck,_M._Teboulle)_files/Breck_2009.pdf) by default. 
+
+The other difference between these two versions is that in BART the regularization parameter is scaled based on the matrix size, which means different regularization parameters should be used between these two versions. I would recommend using BART or other reconstruction tools once everything is settled down.
 
 
 ### Results
 One four-shot brain DWI data and corresponding sensitivity map are provieded (matrix size: 168-168, 48 coils). Here are the results I got：
 
-### References
-If you think this helps, please cite our paper.
-
-@article{hu2019motion,
-  title={Motion-robust reconstruction of multishot diffusion-weighted images without phase estimation through locally low-rank regularization},
-  
-  author={Hu, Yuxin and Levine, Evan G and Tian, Qiyuan and Moran, Catherine J and Wang, Xiaole and Taviani, Valentina and Vasanawala, Shreyas S and McNab, Jennifer A and Daniel, Bruce A and Hargreaves, Brian L},
-  
-  journal={Magnetic resonance in medicine},
-  
-  volume={81},
-  
-  number={2},
-  
-  pages={1181--1190},
-  
-  year={2019},
-  
-  publisher={Wiley Online Library}
-}
