@@ -29,7 +29,7 @@ One four-shot brain DWI data and corresponding sensitivity map are provided (mat
   <p>Example output (left: just Fourier transform without phase correction, middle: shot-LLR based on BART, right: shot-LLR using POCS).</p>
 </div>
 
-The difference between middle and right should mainly come from the regularization parameter difference (they both work well). Here no Partial Fourie reconstruction is used, so the results look a little blurry. The key point is there is no ghosting artifacts. Feel free to try [Homodyne](https://users.fmrib.ox.ac.uk/~karla/reading_group/lecture_notes/Recon_Pauly_read.pdf) or our [virtual conjugate shot method](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.27488).
+The difference between middle and right should mainly come from the regularization parameter difference (they both work well). Here no Partial Fourie reconstruction is used, so the results look a little blurry. The key point is there is no ghosting artifact. Feel free to try [Homodyne](https://users.fmrib.ox.ac.uk/~karla/reading_group/lecture_notes/Recon_Pauly_read.pdf) or our [virtual conjugate shot method](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.27488).
 
 
 
